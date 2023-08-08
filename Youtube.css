@@ -1,0 +1,313 @@
+/* Alawys put this in the first lines of your Css code */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* It is advisable to put les Css des fils under le Css de parent , to be more organized and find what you're looking for quickly */
+
+/*Header Section */
+header{
+    width: 100%;
+    height: 7vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 25px;
+    position: sticky; 
+    Left : 0;
+    Top : 0;
+    Z-index : 999; 
+}
+
+
+.header-left{
+    width: 10%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.youtube-logo{
+    height: 80%;
+    width: 70%;
+    margin-left: 15px;
+    
+}
+
+.header-center{
+    width: 55%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-center input {
+ 
+    border: rgb(200, 195, 195) 1px solid;
+    border-radius: 25px 0 0 25px;
+    width: 60%;
+    padding: 12px 16px;
+    border-right: none;
+    margin-left: 130px;
+    outline: none;
+
+}
+
+.header-center button { 
+    /* same dimensions as the input one so it will be the same size */
+    padding: 5px 16px;
+    background-color: rgb(196, 191, 191);
+    border-radius: 17px;
+    border: rgb(200, 195, 195) 2px solid;
+    border-radius: 0 25px 25px 0;
+    margin-right: 20px;
+    border-left: none;
+    cursor: pointer;
+
+}
+
+.header-right{
+    width: 11%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-right img 
+{
+width: 30px;
+height: 30px;
+border-radius: 50%;
+cursor: pointer;
+}
+
+.effect:hover{
+    background-color: rgb(206, 204, 204);
+    padding: 9px 9px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .4s all ease-in-out;
+}
+
+/* main Section */
+.main{
+    width: 100%;
+    display: flex;
+   
+}
+
+.main-left /*sidebar*/ {
+    width: 15%;
+   /* background-color:hotpink ;*/
+    flex-wrap: wrap;
+    position: sticky;
+    height: 70vh; 
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    
+}
+
+.main-left button {
+    width: 95%;
+    height: 45px;
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: row;
+align-items: center;
+margin: 10px 5px;
+border: none;
+}
+
+.main-left button:hover{
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.main-left button:active{
+    background-color: rgb(220, 217, 217);
+}
+.main-left p {
+margin-left: 20px;
+font-weight: 540;
+font-size: medium;
+
+}
+
+.spacing{
+    margin-left: 10px;
+}
+
+hr{
+    margin-left: 10px;
+    width: 90%;
+    margin-right: 10px;
+    color: #f2f2f2;
+}
+
+.Subscribtions {
+    font-weight: bold;
+    font-size: medium;
+    margin-top: 10px;
+
+}
+
+.main-left img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+    
+}
+
+.main-right{
+    width: 85%;
+    height: 100%;  
+}
+
+.main-right-top {
+        width: 100%;
+        height: 5%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px 20px;
+        position: sticky;
+        top: 7vh; /* Adjust this value to match the header's height */
+        z-index: 998; /* Lower z-index to stay below the header */
+        background-color: white;
+    }
+
+.main-right-top button{
+    height: 30px;
+    width: 80px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: #f2f2f2;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-right: 15px;
+}
+
+.main-right-top button:hover{
+    background-color: rgb(203, 201, 201);
+    transition: all 0.4s;
+} 
+
+.main-right-top button:focus {
+    background-color:black ;
+    color: white;
+    cursor: pointer;
+}
+
+
+.main-right-bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 15px 25px;
+    flex-wrap: wrap;
+    
+}
+
+.video{
+    
+    /*So that it fits perfectly and so that they flex with the type of screen and the 32 in 100% devided by the number of videos wanted  */
+    width: 29%;
+    height: 325px;
+    margin-bottom: 20px;
+    Transition: all 0.4s ;
+    margin-top: 15px;
+}
+
+.video:hover{
+    cursor: pointer;
+    Transform: scale(1.01);
+
+}
+
+.thumbnail{
+width: 100%;
+height: 70%;
+border-radius: 15px;
+overflow: hidden;
+
+}
+.thumbnail img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
+.video-information{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+
+}
+
+.video-information p {
+    margin-bottom: 4px;
+}
+
+.profile-pic{
+height: 100%;
+width: 18%;
+display: flex;
+align-items: flex-start;
+justify-content: center;
+}
+
+.profile-pic img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-right: 12px;
+}
+
+.video-information1{
+height: 35%;
+width: 100% ;
+margin-top: 10px;
+
+
+}
+
+.video-information1 p:nth-child(1){
+    font-weight: bold;
+    color: black;
+  
+}
+
+.video-information1 p:nth-child(2){
+    font-weight: thin;
+    color: grey;
+    
+}
+
+.video-information1 p:nth-child(3){
+    font-weight: thin;
+    color: grey;
+    
+}
+
